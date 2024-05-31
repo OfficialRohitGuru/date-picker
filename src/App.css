@@ -28,6 +28,20 @@
   color: #61dafb;
 }
 
+.app-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  height: 100vh; /* Make the container take the full height of the viewport */
+  text-align: center; /* Center text inside the container */
+}
+
+/* Additional styling for the heading, if needed */
+.app-container h1 {
+  margin-bottom: 20px; /* Space between heading and date picker */
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -1,0 +1,71 @@
+/* Center the date-picker component */
+.date-picker {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    margin: 0 auto; /* Center within the parent container */
+  }
+  
+  .date-picker input {
+    width: 200px;
+    padding: 8px;
+    font-size: 16px;
+    text-align: center; /* Center the text inside the input field */
+  }
+  
+  /* Center the calendar popup */
+  .calendar {
+    position: absolute;
+    top: 40px;
+    left: 50%; /* Move the left edge to the middle */
+    transform: translateX(-50%); /* Move it back by half its width */
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    width: 280px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .days-of-week, .days {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .day-of-week, .day {
+    width: 14.28%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .day {
+    cursor: pointer;
+  }
+  
+  .day.selected {
+    background: #007bff;
+    color: white;
+    border-radius: 50%;
+  }
+  
+  .day.empty {
+    background: transparent;
+    cursor: default;
+  }
+  
